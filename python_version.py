@@ -1,9 +1,9 @@
-'''spit out the python version'''
+'''checks for Python3'''
 import platform
 THE_VERSION = platform.python_version()
-print(THE_VERSION)
+
 if THE_VERSION <= '3':
-    print('uh oh. you\'re running', platform.python_version())
+    print('uh oh. you\'re running ' + THE_VERSION)
 else:
-    print('yay! you\'re running ', platform.python_version())
+    print('yay! you\'re running', THE_VERSION)
 print('This requires Python3')
