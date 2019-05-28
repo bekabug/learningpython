@@ -1,12 +1,12 @@
+'''print the number of years to your 100th birthday'''
 import datetime
-d = datetime.datetime.today()
-thisyear = int(d.year)
-            
-birthyear = int(input("What year were you born: "))
-age = thisyear - birthyear
-yearsto100 = 100 - age
+THE_DATE = datetime.datetime.today()
+THIS_YEAR = int(THE_DATE.year)
+BIRTH_YEAR = int(input('What year were you born: '))
+AGE = THIS_YEAR - BIRTH_YEAR
+YEARSTO100 = 100 - AGE
 
-print("You will be", age, "this year")
-print("You will be 100 in", yearsto100, "years")
+print('You will be', AGE, 'this year')
+print('You will be 100 in', YEARSTO100, 'years')
 
-print("In", yearsto100, "years, the year will be", birthyear + 100)
+print('In', YEARSTO100, 'years, the year will be', BIRTH_YEAR + 100)
