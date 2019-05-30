@@ -1,5 +1,5 @@
 '''Get the time'''
 import datetime
-RIGHT_NOW = datetime.datetime.today()
-TODAY = str(RIGHT_NOW.date)
-print(TODAY)
+THE_TIME = datetime.datetime.now()
+print("Current date and time: ")
+print(THE_TIME.strftime("%A, %B %d, %Y at %I:%M:%S %p"))
